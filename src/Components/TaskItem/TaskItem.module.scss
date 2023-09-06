@@ -1,0 +1,77 @@
+.taskItemContainer{
+    display: flex;
+    gap: 12px;
+    background: var(--gray-500);
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 16px;
+    color: var(--gray-100);
+    border: 1px solid var(--gray-400);
+}
+
+.taskTitle{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    line-height: 140%;
+    width: 632px;
+    height: 40px;
+    font-weight: 400;
+}
+
+.taskTitleCompleted{
+    text-decoration: line-through;
+    color: var(--gray-300);
+    flex : 1;
+}
+
+.checkbox{
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 2px solid var(--blue);
+    background: transparent;
+    -webkit-appearance: none;
+   box-shadow: none;
+}
+
+.checkbox:focus{
+    box-shadow: none;
+}
+
+.checkbox:hover{
+   background: var(--blue-dark);
+   cursor: pointer;
+   box-shadow: none;
+}
+
+.checkbox:checked{
+    background: var(--purple-dark);
+    border: 0;
+    box-shadow: none;
+}
+
+.checkbox:checked::before{
+    box-shadow: none;
+    content: "\002714";
+    color: var(--gray-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 6px;
+    box-shadow: none;
+    
+}
+
+.iconDelete{
+    color: var(--gray-300); 
+}
+
+.iconDelete:hover{
+    color:var(--red-danger);
+    cursor: pointer;
+    background: var(--gray-400);
+}

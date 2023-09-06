@@ -1,0 +1,53 @@
+.addNewTaskContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 736px;
+    height: 54px;
+    gap: 8px;
+    flex-direction: row;
+    margin: 0 auto;
+    position: relative;
+    top: -25px;
+    
+}
+
+.inputNewTask{
+    width: 638px;
+    height: 22px;
+    background: var(--gray-500);
+    color:var(--gray-300);
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btnNewTask{
+    width: 90px;
+    height: 52px;
+    color:var(--gray-100);
+    background: var(--blue-dark);
+    border-radius: 8px;
+    border:none;
+    padding: 16px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.btnNewTask:not(:disabled):hover{
+    background: var(--blue);
+    cursor: pointer;
+
+}
+
+.btnNewTask:disabled{
+  opacity: 0.7;
+  cursor: not-allowed;
+}
